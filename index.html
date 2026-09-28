@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the TorrentFlow Android app.">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy · TorrentFlow</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f7fb;
+      --surface: #ffffff;
+      --surface-accent: #eef2ff;
+      --text: #101827;
+      --muted: #526176;
+      --border: #dce3ee;
+      --accent: #315eea;
+      --accent-strong: #2448ba;
+      --shadow: 0 12px 36px rgb(31 45 78 / 9%);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:hover { color: var(--accent-strong); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: #fff;
+      background: #101827;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .shell {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .card {
+      margin-top: 18px;
+      padding: clamp(20px, 4vw, 32px);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      margin-top: 0;
+      padding: clamp(26px, 6vw, 52px);
+      background: linear-gradient(145deg, var(--surface), var(--surface-accent));
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+      font-weight: 760;
+    }
+
+    .mark {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border-radius: 15px;
+      color: #fff;
+      background: linear-gradient(135deg, #8b35f2, #147fe9 72%, #20d4e5);
+      letter-spacing: -.08em;
+      box-shadow: 0 8px 20px rgb(65 72 220 / 25%);
+    }
+
+    h1 {
+      max-width: 15ch;
+      margin: 0;
+      font-size: clamp(2.4rem, 8vw, 4.5rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.25rem, 3vw, 1.56rem);
+      line-height: 1.3;
+      letter-spacing: -.015em;
+    }
+
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 14px 0 0; padding-left: 23px; }
+    li + li { margin-top: 8px; }
+    code { overflow-wrap: anywhere; }
+
+    .meta { margin-top: 22px; color: var(--muted); }
+    .lead { font-size: 1.08rem; }
+    .muted { color: var(--muted); }
+    .contents ol { columns: 2; margin: 0; padding-left: 22px; }
+    .contents li { break-inside: avoid; margin: 5px 18px 5px 0; }
+    .contact { border-color: #9db2ef; }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 17px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--accent);
+      font-weight: 720;
+      text-decoration: none;
+    }
+
+    .button:hover { color: #fff; background: var(--accent-strong); }
+    footer { padding: 28px 4px 0; color: var(--muted); font-size: .9rem; }
+
+    @media (max-width: 660px) {
+      .shell { width: min(100% - 20px, 940px); padding-top: 10px; }
+      .card { border-radius: 17px; }
+      .contents ol { columns: 1; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #07101f;
+        --surface: #111b2d;
+        --surface-accent: #172b51;
+        --text: #f4f7fc;
+        --muted: #afbdd0;
+        --border: #2a3a52;
+        --accent: #82a7ff;
+        --accent-strong: #a9c1ff;
+        --shadow: 0 12px 36px rgb(0 0 0 / 22%);
+      }
+
+      .contact { border-color: #4a68aa; }
+      .button { color: #07101f; }
+      .button:hover { color: #07101f; }
+    }
+
+    @media print {
+      :root {
+        --background: #fff;
+        --surface: #fff;
+        --surface-accent: #fff;
+        --text: #000;
+        --muted: #333;
+        --border: #bbb;
+      }
+
+      html { scroll-behavior: auto; }
+      .shell { width: 100%; padding: 0; }
+      .card { box-shadow: none; break-inside: avoid; }
+      .button { padding: 0; color: #000; background: none; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to the policy</a>
+  <main id="policy" class="shell">
+    <header class="card hero">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">TF</span>
+        <span>TorrentFlow for Android</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        Effective <time datetime="2026-09-27">27 September 2026</time>
+        · Policy version 1.0 · App version 1.0<br>
+        Package: <code>com.torrentflowlite.app</code>
+      </p>
+    </header>
+
+    <section class="card lead" aria-labelledby="summary-title">
+      <h2 id="summary-title">The short version</h2>
+      <p>This policy explains how the current Android release of TorrentFlow handles information when you browse, download a direct file, or start a BitTorrent transfer.</p>
+      <p>TorrentFlow keeps its settings, transfer records, browser state, and downloaded files on your device. The developer does not operate an app backend that receives copies of that data. Browsing and downloading still send information directly to the websites, search providers, download hosts, trackers, and peers you choose to contact.</p>
+    </section>
+
+    <nav class="card contents" aria-labelledby="contents-title">
+      <h2 id="contents-title">Contents</h2>
+      <ol>
+        <li><a href="#provider">Who provides TorrentFlow</a></li>
+        <li><a href="#overview">Privacy overview</a></li>
+        <li><a href="#local-data">Information kept on your device</a></li>
+        <li><a href="#web-search">Web browsing and search</a></li>
+        <li><a href="#direct-downloads">Direct downloads and sharing</a></li>
+        <li><a href="#peer-to-peer">BitTorrent and peer-to-peer privacy</a></li>
+        <li><a href="#permissions-background">Permissions and background operation</a></li>
+        <li><a href="#google-play">Google Play and system services</a></li>
+        <li><a href="#retention-deletion">Retention, deletion, and backups</a></li>
+        <li><a href="#security">Security and content risks</a></li>
+        <li><a href="#choices-contact">Your choices and privacy requests</a></li>
+        <li><a href="#policy-webpage">This policy webpage</a></li>
+        <li><a href="#children">Children and audience</a></li>
+        <li><a href="#lawful-use">Lawful use</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+      </ol>
+    </nav>
+
+    <article id="provider" class="card">
+      <h2>1. Who provides TorrentFlow</h2>
+      <p>TorrentFlow for Android (package <code>com.torrentflowlite.app</code>) is provided by the developer identified in the Developer contact section of its Google Play listing (“we”, “us”, or “the developer”). You can contact the developer through that listing.</p>
+      <p>This policy applies to app version 1.0 and policy version 1.0. It does not replace the privacy policies or terms of websites, search engines, download hosts, trackers, peers, Android, device manufacturers, network providers, or apps you choose to share with.</p>
+    </article>
+
+    <article id="overview" class="card">
+      <h2>2. Privacy overview</h2>
+      <p>In the current release, TorrentFlow has no user accounts, advertising SDK, developer analytics or crash-reporting SDK, subscription, billing, or in-app purchase system. The developer does not sell personal information or use it for cross-context behavioural advertising. Websites opened inside the browser may have their own advertising or tracking technologies.</p>
+      <p>TorrentFlow is a network tool. When you ask it to visit or transfer something, relevant network participants receive the information needed to fulfil that request.</p>
+      <ul>
+        <li>Your download links, magnet links, browser state, settings, transfer history, torrent metadata, and downloaded content are stored locally by the app.</li>
+        <li>TorrentFlow reads the clipboard only after you tap a Paste action.</li>
+        <li>TorrentFlow reads only a <code>.torrent</code> file you explicitly select or send to it through Android; it does not request general access to all photos, videos, music, or files.</li>
+        <li>The app does not request your precise location, contacts, camera, microphone, or advertising ID.</li>
+      </ul>
+    </article>
+
+    <article id="local-data" class="card">
+      <h2>3. Information kept on your device</h2>
+      <p>TorrentFlow may keep the following information in app-private or app-specific storage so that its features work and interrupted transfers can resume. A URL can itself contain personal information, a signed access token, or another secret, so review links before adding them.</p>
+      <ul>
+        <li>Direct URLs, magnet links, source and final redirect URLs, file names, save locations, sizes, progress, status, timestamps, response validators, and a limited recent-transfer history.</li>
+        <li>Torrent metadata, info hashes, peer-transfer state, partial files, and resume data while a torrent is active or resumable.</li>
+        <li>Downloaded files in TorrentFlow’s app-specific storage, plus any copies you export, share, or move elsewhere.</li>
+        <li>Preferences such as theme, search provider, network choices, download behaviour, and whether the rating prompt has already been considered.</li>
+        <li>For the built-in browser: up to eight open-tab URLs and titles, back/forward state, and data maintained by Android System WebView such as cache, cookies—including third-party cookies where a site uses them—DOM storage, and other site storage.</li>
+      </ul>
+    </article>
+
+    <article id="web-search" class="card">
+      <h2>4. Web browsing and search</h2>
+      <p>The built-in browser opens the public web using Android System WebView. JavaScript, cookies, DOM storage, images, and Safe Browsing can be used. Websites and their service providers can receive your public IP address, requested URLs, browser and device information exposed by WebView, cookies, form entries, and other data you choose to submit. They may combine or retain it under their own policies.</p>
+      <p>When you search, TorrentFlow sends your search words to the provider you selected: Google, Bing, DuckDuckGo, or Yahoo. Entering a full web address sends a request to that address instead. TorrentFlow does not send a separate copy of your browsing history or search query to the developer.</p>
+    </article>
+
+    <article id="direct-downloads" class="card">
+      <h2>5. Direct downloads and sharing</h2>
+      <p>For a direct download, the host and any redirect or delivery providers receive your public IP address, the requested URL, connection metadata, and ordinary request headers. TorrentFlow may also send its saved user agent, a same-origin referrer, and cookies that match the destination when those are needed for a download started from the browser. The host may return cookies and transfer metadata that TorrentFlow stores locally for continuity.</p>
+      <p>If you use Android’s Share or Open with controls, TorrentFlow gives only the app you select temporary access to the chosen file. The receiving app handles that copy under its own terms and privacy policy.</p>
+    </article>
+
+    <article id="peer-to-peer" class="card">
+      <h2>6. BitTorrent and peer-to-peer privacy</h2>
+      <p>BitTorrent is public peer-to-peer networking, not a private or anonymous download service. While a torrent is active, trackers, distributed hash table participants, peer-exchange participants, and connected peers may observe information such as your public IP address and port, torrent identifier (info hash), client characteristics, file-piece availability, and transfer activity. Those parties may log, publish, or further process that information outside the developer’s control.</p>
+      <p>A BitTorrent client can upload pieces to other peers while your download is active, including before it finishes. TorrentFlow is designed to stop its torrent session when completion is detected and does not offer intentional continued seeding after completion, but information already seen or copied by third parties cannot be withdrawn.</p>
+      <p>When you allow local-network access, compatible BitTorrent features may use it for local peer discovery and supported router or NAT configuration. If you decline that permission, local discovery is disabled; internet peer connections may still work. TorrentFlow is not a VPN and does not hide your IP address.</p>
+    </article>
+
+    <article id="permissions-background" class="card">
+      <h2>7. Permissions and background operation</h2>
+      <p>TorrentFlow uses internet and network-state access to browse and transfer data. On Android versions that require it, the app asks for local-network permission only when a torrent needs local peer or compatible router features. You can decline or later revoke that permission in Android settings.</p>
+      <p>Active transfers use an Android foreground data-sync service and a wake lock so work can continue while the app is not visible. If notification permission is available, the required transfer notification can show a file name, status, and progress. Depending on your Android notification settings, that information may be visible on the lock screen. You can change notification visibility in system settings, but Android may require an active foreground-service notice.</p>
+    </article>
+
+    <article id="google-play" class="card">
+      <h2>8. Google Play and system services</h2>
+      <p>After a successful live download, TorrentFlow may ask Google Play to display its in-app review interface. You can also open the Play listing from Settings. The app itself does not receive whether you submitted a rating, the score you selected, or review text; it stores only local timing and eligibility flags used to avoid asking too often. Google processes rating and review data under Google’s policies, and a submitted review may be published or made available to the developer through Google Play.</p>
+      <p>Android, Google Play, Android System WebView, Safe Browsing, your device manufacturer, and your network provider may process installation, security, diagnostics, browsing, or connection data independently under their own policies. The current app does not add a developer-operated analytics or crash-reporting service.</p>
+    </article>
+
+    <article id="retention-deletion" class="card">
+      <h2>9. Retention, deletion, and backups</h2>
+      <p>Local information remains until it is replaced by newer limited history, removed through a control the app provides, removed through Android’s Clear storage control, or removed when you uninstall the app. Removing a transfer record does not necessarily delete its downloaded file, and deleting an app-managed file does not remove copies you shared, exported, or moved elsewhere.</p>
+      <p>TorrentFlow’s Android backup configuration excludes its core settings, transfer records, WebView data, torrent metadata, and app-managed downloads from cloud and device-to-device backup. Copies stored outside TorrentFlow remain subject to the storage location, receiving app, device, and backup services you chose.</p>
+      <p>The developer has no app backend from which to retrieve or remotely erase your local data. Clearing TorrentFlow’s storage in Android settings is the most complete on-device reset. It also removes local settings, browser state, and app-managed downloads, so save anything you need first. Third-party websites, hosts, trackers, peers, search providers, and receiving apps apply their own retention and deletion practices.</p>
+    </article>
+
+    <article id="security" class="card">
+      <h2>10. Security and content risks</h2>
+      <p>TorrentFlow relies on Android’s application sandbox and app-specific storage. HTTPS protects supported connections in transit, but ordinary HTTP is not encrypted and BitTorrent peer traffic is not end-to-end encrypted or anonymous. No browser or downloader can guarantee that a website, link, torrent, peer, or downloaded file is safe, lawful, authentic, or free of malware.</p>
+      <p>Keep Android and Android System WebView updated, inspect links and file types, use reputable sources, and scan unfamiliar files before opening them. Do not put credentials or sensitive information into a site unless you trust it and understand its privacy practices.</p>
+    </article>
+
+    <article id="choices-contact" class="card">
+      <h2>11. Your choices and privacy requests</h2>
+      <p>You choose which links, sites, search provider, files, and torrents TorrentFlow uses. You can stop a transfer, delete available records or files, revoke notification or local-network permissions in Android settings, clear the app’s storage, or uninstall it. Clearing local data cannot erase copies or logs already held by another party.</p>
+      <p>TorrentFlow does not create an online account or remote user profile, so there is no TorrentFlow account to close and no remote account-deletion URL. For privacy questions or rights available under applicable law, use the monitored contact method in the Developer contact section of TorrentFlow’s Google Play listing.</p>
+      <p>If you contact the developer, the developer and the communication provider you choose receive the information you send, such as your address, message, and attachments. It is used to respond, handle the request, prevent abuse, and meet legal obligations, and is retained only as reasonably necessary for those purposes.</p>
+    </article>
+
+    <article id="policy-webpage" class="card">
+      <h2>12. This policy webpage</h2>
+      <p>This page contains no advertising, analytics, tracking scripts, remote fonts, remote images, or forms, and it does not set its own cookies. When this page is hosted with GitHub Pages, GitHub may automatically process standard access-log and security information, such as an IP address, request time, requested page, and user agent, under GitHub’s own terms and privacy practices.</p>
+    </article>
+
+    <article id="children" class="card">
+      <h2>13. Children and audience</h2>
+      <p>TorrentFlow is a general-purpose browser and downloader and is not designed or directed specifically to children. It does not provide a child mode, age gate, or curated web environment. The public web and peer-to-peer sources can contain material unsuitable for children. A parent or guardian should supervise any use by a minor where permitted by applicable law.</p>
+    </article>
+
+    <article id="lawful-use" class="card">
+      <h2>14. Lawful use</h2>
+      <p>Use TorrentFlow only for content you own or are authorised to access and distribute. You are responsible for following copyright law, licences, website terms, network rules, and other laws that apply to you. TorrentFlow does not grant rights to third-party content and is not designed to bypass access controls.</p>
+    </article>
+
+    <article id="changes" class="card">
+      <h2>15. Changes to this policy</h2>
+      <p>If TorrentFlow’s data practices change, the policy version and effective date will be updated and the revised policy will be published at the Google Play privacy-policy URL and in the app. Where required, an additional notice or choice will be provided before a material new practice takes effect.</p>
+    </article>
+
+    <aside class="card contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact the developer</h2>
+      <p>Use the monitored developer contact method published with TorrentFlow on Google Play. Please write “TorrentFlow privacy request” in the subject and do not include confidential download links or unrelated personal files.</p>
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.torrentflowlite.app" rel="external noopener">Developer contact on Google Play</a>
+    </aside>
+
+    <footer>
+      <p>© 2026 TorrentFlow. This public policy is aligned with the policy supplied inside the Android app.</p>
+    </footer>
+  </main>
+</body>
+</html>
